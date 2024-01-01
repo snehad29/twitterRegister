@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input:focus + div {
+         color: #1d9bf0;
+        }
+        input:focus + div, input:not(:placeholder-shown) + div {
+            top: 2px;
+            transform: translateY(0);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="m-12">
+    <div class="relative">
+        <input class="px-2 outline outline-1 outline-slate-300 rounded-[2px] pt-4 pb-2 text-xl focus:outline-[#1d9bf0]" placeholder=" " />
+        <div class="px-2 absolute top-1/2 -translate-y-1/2 text-slate-500 transition-all transition duration-300">Name</div>
+    </div>
+</div>
+</body>
+</html>
